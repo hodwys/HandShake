@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundupsidedown"
+    tools:context=".EditProfileActivity">
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/circular_text"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circular_text"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="phone"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/editUsername"
+        app:layout_constraintStart_toStartOf="@+id/editUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editUsername" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="256dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/editPhone"
+        app:layout_constraintStart_toStartOf="@+id/editPhone"
+        app:layout_constraintTop_toBottomOf="@+id/editPhone">
+
+        <RadioButton
+            android:id="@+id/radioButtonedit"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="מעוניין לתרום"
+            app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+        <RadioButton
+            android:id="@+id/radioButton2edit"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:text="אשמח לתרומה"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/aboutUserEdit"
+        android:layout_width="250dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/tellusaboutyourself"
+        android:ems="10"
+        android:hint="Tell us about yourself..."
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+
+    <Button
+        android:id="@+id/makeChanges"
+        android:layout_width="264dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_button"
+        android:text="Update "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/aboutUserEdit"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="@+id/aboutUserEdit"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUserEdit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

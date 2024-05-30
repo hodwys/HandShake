@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundupsidedown"
+    tools:context=".PostNewDonation">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutType"
+        android:layout_width="375dp"
+        android:layout_height="129dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="casual"
+            android:paddingBottom="10dp"
+            android:text="Choose your donation type"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/catagoriesDonation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/furnituresDonation"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/furnitures"
+                android:fontFamily="casual"
+                android:paddingRight="10dp"
+                android:text="Furnitures"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/clothesDonation"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/clothes"
+                android:fontFamily="casual"
+                android:paddingLeft="5dp"
+                android:paddingRight="30dp"
+                android:text="Clothes"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/foodDonation"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/food"
+                android:fontFamily="casual"
+                android:paddingLeft="10dp"
+                android:paddingRight="30dp"
+                android:text="Food"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="106dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/donationName"
+        app:layout_constraintStart_toStartOf="@+id/donationName"
+        app:layout_constraintTop_toBottomOf="@+id/donationName">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="casual"
+            android:text="Choose the donation location"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/chooseLocation"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/regions"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/donationInfo"
+        android:layout_width="315dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/tellusaboutyourself"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Describe your donation in a\n few words..."
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutType" />
+
+    <EditText
+        android:id="@+id/donationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Donation Name"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shareDonationButton"
+        android:layout_width="175dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/blue_button"
+        android:fontFamily="casual"
+        android:text="Post\n Donation"
+        android:textColor="#FEFEFE"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/donationInfo"
+        app:layout_constraintStart_toStartOf="@+id/donationInfo"
+        app:layout_constraintTop_toBottomOf="@+id/donationInfo" />
+
+    <Button
+        android:id="@+id/backbtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="307dp"
+        android:background="#0C296B"
+        android:fontFamily="casual"
+        android:text="back"
+        android:textColor="#FEFEFE"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

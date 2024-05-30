@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "97806126325",
+    "firebase_url": "https://handshake-9f1df-default-rtdb.firebaseio.com",
+    "project_id": "handshake-9f1df",
+    "storage_bucket": "handshake-9f1df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97806126325:android:0290e9b94f719cf48589bc",
+        "android_client_info": {
+          "package_name": "com.example.handshake"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJStAcpis_0q2i7ph15bFgPGnTT5HFFIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

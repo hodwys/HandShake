@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/donorprofilebackground"
+    tools:context=".RecipientProfileActivity">
+
+    <Button
+        android:id="@+id/viewAllDonations"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/blue_button"
+        android:fontFamily="casual"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="View new donations"
+        android:textColor="#F3F4F4"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goToMySavedDonations"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="47dp"
+        android:background="@drawable/blue_button"
+        android:fontFamily="casual"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Saved Donations"
+        android:textColor="#F3F4F4"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/viewAllDonations"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameReceiver"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="272dp"
+        android:background="@drawable/circular_text"
+        android:fontFamily="casual"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phoneReceiver"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circular_text"
+        android:fontFamily="casual"
+        android:padding="10dp"
+        android:text="Phone Number"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/nameReceiver"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="@+id/nameReceiver"
+        app:layout_constraintTop_toBottomOf="@+id/nameReceiver" />
+
+    <TextView
+        android:id="@+id/infoReceiver"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/tellusaboutyourself"
+        android:fontFamily="casual"
+        android:padding="20dp"
+        android:text="About me"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/phoneReceiver"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/phoneReceiver"
+        app:layout_constraintTop_toBottomOf="@+id/phoneReceiver" />
+
+    <Button
+        android:id="@+id/logoutrcpt"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/blue_button"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="logout"
+        android:textAlignment="center"
+        android:textColor="#FEFEFE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoReceiver" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebackgrounds"
+    tools:context=".DonorProfileActivity">
+
+    <Button
+        android:id="@+id/viewDonationsButton"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/blue_button"
+        android:fontFamily="casual"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Post New Donation"
+        android:textColor="#FEFEFE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameProfile"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="232dp"
+        android:background="@drawable/circular_text"
+        android:fontFamily="casual"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/phoneNumberProfile"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circular_text"
+        android:fontFamily="casual"
+        android:paddingTop="7dp"
+        android:text="Phone number"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/nameProfile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nameProfile"
+        app:layout_constraintTop_toBottomOf="@+id/nameProfile" />
+
+    <EditText
+        android:id="@+id/aboutMeProfile"
+        android:layout_width="350dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/tellusaboutyourself"
+        android:fontFamily="casual"
+        android:text="About me"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/rateProfile"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/rateProfile"
+        app:layout_constraintTop_toBottomOf="@+id/rateProfile" />
+
+    <TextView
+        android:id="@+id/rateProfile"
+        android:layout_width="350dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circular_text"
+        android:fontFamily="casual"
+        android:paddingTop="7dp"
+        android:text="My rate"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberProfile" />
+
+    <Button
+        android:id="@+id/goToDonorRequests"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="47dp"
+        android:background="@drawable/blue_button"
+        android:fontFamily="casual"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Saved Donations"
+        android:textColor="#FEFEFE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/viewDonationsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logoutdnr"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/blue_button"
+        android:fontFamily="casual"
+        android:text="logout"
+        android:textColor="#FEFEFE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/aboutMeProfile"
+        app:layout_constraintStart_toStartOf="@+id/aboutMeProfile"
+        app:layout_constraintTop_toBottomOf="@+id/aboutMeProfile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
